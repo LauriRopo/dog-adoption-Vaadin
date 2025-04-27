@@ -1,51 +1,19 @@
-# dog-adoption
+This is a Dog Adoption Platform created as part of a school project for a Java Vaadin course. The web application serves as an interactive platform where users can browse available dogs for adoption and submit adoption requests. It is designed with two main user roles: general users and admin users, each with distinct capabilities.
 
-This project can be used as a starting point to create your own Vaadin application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+Features:
+User Functionality:
 
-## Running the application
+Browse Available Dogs: Users can explore a list of dogs available for adoption. The platform displays essential information about each dog, such as breed, age, temperament, and health status.
 
-Open the project in an IDE. You can download the [IntelliJ community edition](https://www.jetbrains.com/idea/download) if you do not have a suitable IDE already.
-Once opened in the IDE, locate the `Application` class and run the main method using "Debug".
+Adoption Request Submission: Once users find a dog they are interested in, they can submit an adoption request form. This form allows them to provide details about their household, living situation, and why they want to adopt the dog, enabling better matching between adopters and dogs.
 
-For more information on installing in various IDEs, see [how to import Vaadin projects to different IDEs](https://vaadin.com/docs/latest/getting-started/import).
+Admin Functionality:
 
-If you install the Vaadin plugin for IntelliJ, you should instead launch the `Application` class using "Debug using HotswapAgent" to see updates in the Java code immediately reflected in the browser.
+Dog Management: Admin users have the ability to add new dogs to the platform, including essential details like breed, size, age, and any special care instructions. They can also modify existing dog profiles, ensuring the information remains up-to-date and accurate.
 
-## Deploying to Production
+Adoption Request Management: Admins can view and manage all submitted adoption requests. This includes reviewing the applicant's information, processing requests, and updating the status of each adoption application.
 
-The project is a standard Maven project. To create a production build, call 
+Technology Stack:
+The application is built using Java and the Vaadin framework, providing a robust and user-friendly interface for both administrators and general users. Vaadin's components and layout system offer a seamless experience for developing interactive web applications without requiring a separate front-end framework.
 
-```
-./mvnw clean package -Pproduction
-```
-
-If you have Maven globally installed, you can replace `./mvnw` with `mvn`.
-
-This will build a JAR file with all the dependencies and front-end resources,ready to be run. The file can be found in the `target` folder after the build completes.
-You then launch the application using 
-```
-java -jar target/adoption-1.0-SNAPSHOT.jar
-```
-
-## Project structure
-
-- `MainLayout.java` in `src/main/java` contains the navigation setup (i.e., the
-  side/top bar and the main menu). This setup uses
-  [App Layout](https://vaadin.com/docs/components/app-layout).
-- `views` package in `src/main/java` contains the server-side Java views of your application.
-- `views` folder in `src/main/frontend` contains the client-side JavaScript views of your application.
-- `themes` folder in `src/main/frontend` contains the custom CSS styles.
-
-## Useful links
-
-- Read the documentation at [vaadin.com/docs](https://vaadin.com/docs).
-- Follow the tutorial at [vaadin.com/docs/latest/tutorial/overview](https://vaadin.com/docs/latest/tutorial/overview).
-- Create new projects at [start.vaadin.com](https://start.vaadin.com/).
-- Search UI components and their usage examples at [vaadin.com/docs/latest/components](https://vaadin.com/docs/latest/components).
-- View use case applications that demonstrate Vaadin capabilities at [vaadin.com/examples-and-demos](https://vaadin.com/examples-and-demos).
-- Build any UI without custom CSS by discovering Vaadin's set of [CSS utility classes](https://vaadin.com/docs/styling/lumo/utility-classes). 
-- Find a collection of solutions to common use cases at [cookbook.vaadin.com](https://cookbook.vaadin.com/).
-- Find add-ons at [vaadin.com/directory](https://vaadin.com/directory).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/vaadin) or join our [Forum](https://vaadin.com/forum).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin).
+This project demonstrates the use of modern web technologies for building real-world applications while learning about UI design, data management, and user roles in a web-based system.
