@@ -1,3 +1,5 @@
+WORK IN PROGRESS
+
 This is a Dog Adoption Platform created as part of a school project for a Java Vaadin course. The web application serves as an interactive platform where users can browse available dogs for adoption and submit adoption requests. It is designed with two main user roles: general users and admin users, each with distinct capabilities.
 
 Features:
