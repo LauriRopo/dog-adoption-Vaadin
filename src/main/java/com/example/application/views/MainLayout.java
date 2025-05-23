@@ -17,9 +17,7 @@ import com.vaadin.flow.server.menu.MenuEntry;
 import com.vaadin.flow.theme.lumo.LumoUtility;
 import java.util.List;
 
-/**
- * The main view is a top-level placeholder for other views.
- */
+
 @Layout
 @AnonymousAllowed
 public class MainLayout extends AppLayout {
@@ -63,6 +61,9 @@ public class MainLayout extends AppLayout {
                 nav.addItem(new SideNavItem(entry.title(), entry.path()));
             }
         });
+
+        // Add login manually at the end
+        nav.addItem(new SideNavItem("Login", "/login"));
 
         return nav;
     }
